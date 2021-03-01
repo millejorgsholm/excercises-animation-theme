@@ -1,0 +1,32 @@
+g {
+  fill: transparent;
+  stroke: blue;
+  stroke-width: 5;
+}
+
+#rectangle {
+  fill: blue;
+}
+#rectangle2 {
+  stroke: red;
+}
+
+#circle {
+  stroke: palevioletred;
+  stroke-width: 2;
+}
+
+#ellipse {
+  stroke: gold;
+  stroke-width: 2;
+}
+
+#path {
+  stroke: rgb(0, 100, 131);
+  stroke-width: 4;
+}
+
+#curvey_path {
+  stroke: lime;
+  stroke-width: 3;
+}
