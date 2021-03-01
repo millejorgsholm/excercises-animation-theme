@@ -42,13 +42,19 @@ g {
 @keyframes pulse_kf {
   0% {
     transform: scale(1);
+    fill: red;
+    stroke: blue;
   }
 
   50% {
     transform: scale(1.08);
+    fill: green;
+    stroke: red;
   }
 
   100% {
     transform: scale(1);
+    fill: blue;
+    stroke: green;
   }
 }
