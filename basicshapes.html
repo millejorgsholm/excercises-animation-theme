@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic SVG shapes ecxercise</title>
+  </head>
+  <body>
+    <h1>Basic shapes</h1>
+    <!-- Circle -->
+    <svg
+      width="200"
+      height="250"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="25" cy="75" r="20" stroke="red" fill="red" stroke-width="5" />
+    </svg>
+    <!-- 
+    cx = The x-axis coordinate of the center of the circle
+    cy = The y-axis coordinate of the center of the circle
+    r = The radius of the circle. A value lower or equal to zero disables rendering of the circle -->
+
+    <!-- Rectangel -->
+    <svg
+      width="200"
+      height="250"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <!-- Simple rectangle -->
+      <rect
+        x="10"
+        y="10"
+        width="30"
+        height="30"
+        stroke="black"
+        fill="black"
+        stroke-width="5"
+      />
+      <rect
+        x="60"
+        y="10"
+        rx="10"
+        ry="10"
+        width="30"
+        height="30"
+        stroke="black"
+        fill="black"
+        stroke-width="5"
+      />
+    </svg>
+    <script src="basicshapes.js"></script>
+  </body>
+</html>
