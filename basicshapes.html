@@ -51,6 +51,14 @@
         />
       </g>
     </svg>
-    <script src=""></script>
+    <script>
+      window.addEventListener("load", sidenVises);
+      function sidenVises() {
+        console.log("sidenVises");
+        //Adding the pulse animation the round-cornered rectangle
+        document.querySelector("#rectangle2").classList.add("pulse");
+        document.querySelector("#circle").classList.add("pulse");
+      }
+    </script>
   </body>
 </html>
