@@ -14,6 +14,9 @@ g {
 #circle {
   stroke: palevioletred;
   stroke-width: 2;
+  animation: rotation_kf 3s infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
 }
 
 #ellipse {
@@ -39,6 +42,13 @@ g {
   animation-timing-function: ease;
 }
 
+.rotation {
+  animation-name: rotation_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
 @keyframes pulse_kf {
   0% {
     transform: scale(1);
@@ -56,5 +66,15 @@ g {
     transform: scale(1);
     fill: blue;
     stroke: green;
+  }
+}
+
+@keyframes rotation_kf {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
