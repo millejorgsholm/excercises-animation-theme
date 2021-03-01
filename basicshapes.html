@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic SVG shapes excercise</title>
+    <style>
+      /* Put all my basic shapes in a group and styled alle elements a once by styling group tag instead of attributes*/
+      g {
+        fill: transparent;
+        stroke: blue;
+        stroke-width: 5;
+      }
+    </style>
   </head>
   <body>
     <h1>Basic shapes</h1>
@@ -17,79 +25,30 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <!-- Rectangle -->
-      <rect
-        x="10"
-        y="10"
-        width="30"
-        height="30"
-        stroke="black"
-        fill="transparent"
-        stroke-width="5"
-      />
-      <rect
-        x="60"
-        y="10"
-        rx="10"
-        ry="10"
-        width="30"
-        height="30"
-        stroke="black"
-        fill="transparent"
-        stroke-width="5"
-      />
+      <g>
+        <rect x="10" y="10" width="30" height="30" />
+        <rect x="60" y="10" rx="10" ry="10" width="30" height="30" />
 
-      <!-- Circle -->
-      <circle
-        cx="25"
-        cy="75"
-        r="20"
-        stroke="red"
-        fill="transparent"
-        stroke-width="5"
-      />
+        <!-- Circle -->
+        <circle cx="25" cy="75" r="20" />
 
-      <!-- Ellipse -->
-      <ellipse
-        cx="75"
-        cy="75"
-        rx="20"
-        ry="5"
-        stroke="red"
-        fill="transparent"
-        stroke-width="5"
-      />
+        <!-- Ellipse -->
+        <ellipse cx="75" cy="75" rx="20" ry="5" stroke-width="5" />
 
-      <!-- Line -->
-      <line
-        x1="10"
-        x2="50"
-        y1="110"
-        y2="150"
-        stroke="orange"
-        stroke-width="5"
-      />
+        <!-- Line -->
+        <line x1="10" x2="50" y1="110" y2="150" />
 
-      <!-- Polyline -->
-      <polyline
-        points="10,10,25,75,75,75 10,110,50,150"
-        stroke="navy"
-        fill="transparent"
-        stroke-width="10"
-      />
+        <!-- Polyline -->
+        <polyline points="10,10,25,75,75,75 10,110,50,150" stroke-width="10" />
+        <!-- Path -->
+        <path d="M 10,10 L 25,75 H 75 L 10,110 L 50,150" stroke-width="5" />
 
-      <path
-        d="M 10,10 L 25,75 H 75 L 10,110 L 50,150"
-        stroke="pink"
-        fill="transparent"
-        stroke-width="5"
-      />
-
-      <path
-        d="M 10,10 L 25,75 H 75 L 10,110 L 50,150  C 45,90 -30,50 80,55 s -40,90 80,-50 "
-        stroke="lime"
-        fill="transparent"
-        stroke-width="3"
-      />
+        <!-- Curvey path -->
+        <path
+          d="M 10,10 L 25,75 H 75 L 10,110 L 50,150  C 45,90 -30,50 80,55 s -40,90 80,-50 "
+          stroke-width="3"
+        />
+      </g>
     </svg>
     <script src=""></script>
   </body>
