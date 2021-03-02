@@ -8,6 +8,20 @@
     <title>Cap configurator</title>
   </head>
   <body>
-    <script src="cap.js"></script>
+    <section></section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", start);
+      console.log("DOMContentLoaded");
+
+      async function start() {
+        let response = await fetch("cap_new_try-01.svg");
+        let mySvgData = await response.text();
+        document.querySelector("section").innerHTML = mySvgData;
+        startManipulatingTheSvg();
+      }
+
+      function startManipulatingTheSvg() {}
+    </script>
   </body>
 </html>
