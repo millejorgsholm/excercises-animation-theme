@@ -19,7 +19,6 @@ function addUserInteraction() {
     eachG.addEventListener("mouseover", the_mouseover);
     eachG.addEventListener("mouseout", the_mouseout);
   });
-
   document.querySelectorAll(".color_btn").forEach(each_BTN => {
     each_BTN.addEventListener("click", color_click);
   });

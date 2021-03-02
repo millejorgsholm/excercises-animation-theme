@@ -6,6 +6,10 @@ svg {
   pointer-events: none;
 }
 
+#Shadow_copy_Image {
+  pointer-events: none;
+}
+
 .g_to_interact_with {
   fill: transparent;
 }
